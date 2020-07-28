@@ -64,7 +64,7 @@ function draw() {
 
   if (bird.y >= height) {
     stopped = true;
-    console.log("is higher");
+    canMove = false;
   }
 
   textAlign(CENTER);
