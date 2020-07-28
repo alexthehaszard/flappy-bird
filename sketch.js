@@ -31,8 +31,11 @@ function setup() {
 function draw() {
   if (stopped) return;
   background(220);
+  fill(255);
+  if (!canMove) fill(255, 0, 0);
   bird.show();
   if (gameStarted == true) {
+    fill(255);
     bird.update();
     pipe[index].update();
     pipe2[index2].update();
@@ -67,6 +70,7 @@ function draw() {
     canMove = false;
   }
 
+  fill(0);
   textAlign(CENTER);
   textSize(100);
   text(score, width / 2, 100);
@@ -96,7 +100,7 @@ function draw() {
     bird.x + 20 > pipe2[index2].x &&
     bird.x - 20 < pipe2[index2].x + 50
   ) {
-    caches = false;
+    canMove = false;
   }
   if (stopped || !gameStarted) {
     textSize(35);
