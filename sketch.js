@@ -109,6 +109,7 @@ function draw() {
 }
 
 function keyPressed() {
+  if (bird.y <= 0) return;
   if (!canMove && stopped) {
     setup();
     stopped = false;
