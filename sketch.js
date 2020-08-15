@@ -1,13 +1,13 @@
 let bird = [];
-let pipe;
-let pipe2;
-let gameStarted;
-let index;
-let indexUsed;
-let index2;
-let index2Used;
-let score;
-let stopped;
+let pipe,
+  pipe2,
+  gameStarted,
+  index,
+  indexUsed,
+  index2,
+  index2Used,
+  score,
+  stopped;
 let currentPipe = 1;
 let generation = 1;
 let currentScore = 0;
