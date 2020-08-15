@@ -9,7 +9,7 @@ let index2Used;
 let score;
 let stopped;
 let currentPipe = 1;
-let generation = 0;
+let generation = 1;
 let currentScore = 0;
 
 for (let i = 0; i < 100; i++) {
